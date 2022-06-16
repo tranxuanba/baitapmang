@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai luyen tap 1</title>
+</head>
+<body>
+<script>
+// khoi tao so nguyen gom 10 phan tu. va hien thi xem co bao nhieu so nguyen >= 10
+//   let arr = [];
+//   let n = 10;
+//   for (let i = 0; i < n; i++) {
+//     arr[i] = prompt("moi nhap vao phan tu o vi tri " + i);
+//   }
+//   let count = 0;
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] >= 10) {
+//       count++;
+//     }
+//   }document.write(count);
+//----------------
+// khoi tao mang so nguyen gom 10 phan tu khac nhau. hien thi ra phan tu co gia tri va chi so cua phan tu lon nhat trong mang.
+// let arr =[];
+// let n = 10;
+// let index = 0;
+// while(true) {
+//     arr[index] = +prompt("moi nhap vao phan tu thu " + index)
+//     if (arr[index] == -1) {
+//         arr.push(arr[index]);index++;
+//     }
+//     if (index == 10){
+//         break;
+//     }
+// }
+
+//---------------
+//viet chuong trinh khoi tao mang so nguyen, hien gia tri lon nhat trong do. in ra trung binh cua cac phan tu trong mang
+// let arr = [];
+// let n = +prompt("moi nhap vao so phan tu trong mang");
+// for (let i = 0; i < n; i++) {
+//     arr[i] = +prompt("nhap vao gia tri phan tu " + i);
+// } console.log(arr);
+// let max = arr[0];
+// let index = 0;
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
+//         index = i;
+//     }
+// }document.write(max + "</br>");
+// let tong = 0;
+// let tb;
+// for (let i = 0; i < arr.length; i++) {
+//     tong = tong + arr[index];
+//     index++;
+// }
+// tb = tong/(arr.length);
+// document.write(tb);
+//viet chuong trinh khoi tao, nhap vao mot mang so nguyen va dao nguoc cac phan tu trong mang do
+// let arr =[];
+// let n = +prompt("nhap vao so phan tu");
+// for (let i = 0; i < n; i++) {
+//     arr[i] = +prompt("nhap vao gia tri phan tu co tri so " + i);
+// }
+// console.log(arr);
+// let arr1 = arr.reverse();
+// console.log(arr1);
+// -----------------
+// viet chuong trinh dem so nguyen am trong mot chuoi
+// let arr = [-1,-2,2,3,4,5,-4];
+// let count = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//         count++;
+//     }
+// }document.write(count);
+    // chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+
+
+    let arr =[];
+    let n = 3;
+    for (let i = 0; i < n; i++){
+        arr[i]= +prompt("nhap vao phan tu co tri so " + i);
+    }
+    console.log(arr);
+    let V = +prompt("nhap V")
+    for (let i = 0; i < n; i++) {
+        if (arr.indexOf(V) !== -1){
+            alert("V is in the array");
+            break;
+        }else {
+            alert("V is not in the array");
+            break;
+        }
+    }
+// let number = new Array(5)
+// for (let i = 0; i < number.length; i++) {
+//     number[i] = Math.random()*10
+// }
+//
+
+</script>
+</body>
+</html>

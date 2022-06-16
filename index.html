@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>khai báo mảng bất kỳ</title>
+</head>
+<body>
+<script>
+  let arr=[];
+  let n = +prompt("nhap vao so phan tu trong mang");
+  let index = 0;
+  for (let i = 0; i < n; i++) {
+      arr[index] = +prompt("nhap vao gia tri phan tu");
+      index++;
+  }console.log(arr)
+  //--------
+
+
+  let num = [];
+  let count=0;
+  while (count<5){
+      let newValue = + prompt("Moi ban nhap so");
+      while (num.indexOf(newValue) != -1){
+          newValue = + prompt("Moi nhap gia tri moi");
+      }
+      num.push(newValue);
+      count++;
+  }
+  let num = [];
+  let count = 0;
+  while (count < 5) {
+      let newValue = +prompt("moi ban nhap so");
+      while (num.indexOf(newValue) != -1) {
+          newValue = +prompt("moi nhap lai gia tri moi");
+      }
+      num.push(newValue);
+      count++;
+  }
+  console.log(num);
+//  ----------
+
+
+  let num = [3, 4, 5, 6, 7, 8, 9];
+  let n = num.length;
+  for (let i = 0; i < num.length/2; i++) {
+//    doi cho num[i] vs num[n-1-i]
+      let temp = num[i];
+      num[i] = num[n-1-i];
+      num[n-1-i] = temp;
+  }
+//  --------------
+
+  let num = [3, 4, 5, 6, 7, 8, 9];
+  // viet so do khôi tim 1 so co trong mang hay
+  let value = + prompt("Moi ban nhap so");
+  let index=-1;
+  for (let i = 0; i < num.length; i++) {
+      if (num[i]==value){
+          index = i;
+          break
+      }
+  }
+
+  let tv = ["mot", "hai", "ba"];
+  let ta = ["one", "two", "three"];
+  // viet so do khôi tim 1 so co trong mang hay
+  let value =  prompt("Moi ban nhap vao tu muon dich");
+  let index=-1;
+  for (let i = 0; i < tv.length; i++) {
+      if (tv[i]==value){
+          index = i;
+          break;
+      }
+  }
+  if(index == -1){
+      alert("khong tim thay");
+  }
+  else {
+      alert("tu " + value + " co nghia la " + ta[index]);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = [3, 4, 5, 6, 7, 8, 9];
+  // viet so do khôi tim 1 so co trong mang hay
+  let value = + prompt("Moi ban nhap so");
+  let index = -1;
+  for (let i = 0; i < num.length; i++) {
+    if (num[i]==value){
+      index = i;
+      // break;
+    }
+  }
+  if (index != -1) {
+      document.write("co nam trong mang")
+  }else {
+      document.write("khong nam trong mang")
+  }
+</script>
+</body>
+</html>
